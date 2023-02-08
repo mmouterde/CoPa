@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <title>MyBlog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta
+            name="description"
+            content="Les Communautés de Partage sont des associations visant à réduire l'impacte écologique de nos sociétés de consommation.
+            Une de nos solutions consistent à ne plus posséder ces équipements mais à les partagers avec la communauté.
+             A l'image d'une bibliothèque, il est possible de disposer d'un équipement à la disposition de tous."
+    />
+    <link
+            rel="canonical"
+            href="https://www.communautesdepartage.fr"
+    />
+    <title>Les Communautés de Partage</title>
+    <link rel="stylesheet" href="{{ get_url(path='normalize.css') }}">
+    <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
 </head>
-
 <body>
-<section class="section">
-    <div class="container">
-        {% block content %} {% endblock %}
+<header>
+    <div>
+        <div>
+            <h1>Les Communautés de Partage</h1>
+        </div>
+        <nav class="p-1">
+            <ul>
+                <li>
+                    <a href="/" class="{% if current_path == '/' %}current{% endif %}">Accueil</a>
+                </li>
+                <li>
+                    <a href="{{ get_url(path='@/blog/_index.md') }}"
+                       class="{% if current_path is starting_with('/blog/') %}current{% endif %}">Blog</a>
+                </li>
+                <li>
+                    <a href="{{ get_url(path='@/contact/_index.md') }}"
+                       class="{% if current_path == '/contact/' %}current{% endif %}">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-</section>
+</header>
+<main style="display:flex; justify-content: center; flex-grow:1" >
+    <section class="section" style="max-width: 42rem;">
+        <div class="container">
+            {% block content %} {% endblock %}
+        </div>
+    </section>
+</main>
+<footer id="footer" class="inner">
+    <div>
+        &copy; 2023 Les Communautés de Partage
+    </div>
+</footer>
 </body>
-
 </html>
