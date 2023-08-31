@@ -4,17 +4,12 @@
         <loc>https://www.communautesdepartage.fr/</loc>
     </url>
     <url>
-        <loc>https://www.communautesdepartage.fr/blog/</loc>
+        <loc>https://www.communautesdepartage.fr/pages/</loc>
     </url>
     <url>
-        <loc>https://www.communautesdepartage.fr/blog/first/</loc>
-        <lastmod>2019-11-27</lastmod>
+        <loc>https://www.communautesdepartage.fr/pages/agenda/</loc>
     </url>
     <url>
-        <loc>https://www.communautesdepartage.fr/blog/second/</loc>
-        <lastmod>2019-11-28</lastmod>
-    </url>
-    <url>
-        <loc>https://www.communautesdepartage.fr/contact/</loc>
+        <loc>https://www.communautesdepartage.fr/pages/contact/</loc>
     </url>
 </urlset>
