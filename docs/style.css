@@ -3,6 +3,10 @@ a.current {
     color: #429b30;
 }
 
+a {
+    text-decoration: underline !important;
+}
+
 /* latin-ext */
 @font-face {
     font-family: 'Montserrat';
