@@ -1,5 +1,6 @@
 +++
 title = "Contacter la COPA"
+weight = 1
 +++
 
 [info@communautesdepartage.fr](info@communautesdepartage.fr)

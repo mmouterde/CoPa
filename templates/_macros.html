@@ -1,0 +1,43 @@
+{% macro render_header() %}
+{% set section = get_section(path="pages/_index.md") %}
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/" style="color: white">CoPa
+            <img src="{{ get_url(path='logo.svg') }}" width="112" height="28">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+            {% set section = get_section(path="pages/_index.md") %}
+            {% for page in section.pages %}
+                <a class="navbar-item subtitle-text" href="{{ page.permalink | safe }}">{{ page.title }}</a>
+            {% endfor %}
+        </div>
+
+    </div>
+</nav>
+
+{% endmacro render_header %}
+
+
+{% macro render_article(article) %}
+<a style="text-decoration: none; color: white" href="{{article.permalink }}">
+<article class="tile is-child notification copa-tile">
+    <div class="content" style="text-align: justify; padding: 0">
+    <p class="title">{{ article.title | safe }}</p>
+    {{ article.summary | safe}}
+    </div>
+
+</article>
+</a>
+
+{% endmacro render_header %}

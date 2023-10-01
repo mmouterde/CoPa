@@ -1,172 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta
-            name="description"
-            content="La Communauté de Partage est une association visant à réduire l'impacte écologique de nos sociétés de consommation.
-            Une de nos solutions consistent à ne plus posséder ces équipements mais à les partagers avec la communauté.
-             A l'image d'une bibliothèque, il est possible de disposer d'un équipement à la disposition de tous."
-    />
-    <link
-            rel="canonical"
-            href="https://www.communautesdepartage.fr"
-    />
-    <title>La Communauté de Partage</title>
-    <link rel="stylesheet" href="https://www.communautesdepartage.fr/normalize.css">
-    <link rel="stylesheet" href="https://www.communautesdepartage.fr/style.css">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #FED43F;
+        /* Primary theme text color */
+        --primary-text-color: #543631;
+        --primary-text-color-over: #000;
+        /* Primary theme link color */
+        --primary-link-color: #F9BB2D;
+        /* Secondary color: the background body color */
+        --secondary-color: #fcfaf6;
+        --secondary-text-color: #303030;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d46e13;
+        --toc-background-color: white;
+        --code-color: #4a4a4a;
+        --code-background-color: white;
+
+        --shadow-color: #ddd;
+
+        /* Font used for headers (h1 & h2) */
+        --header-font-family: "Fira Sans", sans-serif;
+        /* Font used for text */
+        --text-font-family: "Fira Sans", sans-serif;
+
+        --primary-tile-color: rgba(65, 179, 251, 0.7);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-color: #382929;
+            --primary-text-color: #d7d7d7;
+            --primary-text-color-over: #FFF;
+            --primary-link-color: #9b9b9b;
+            --secondary-color: #282828;
+            --secondary-text-color: #f2f2f2;
+            --toc-highlight-text-color: #f2f2f2;
+            --toc-background-color: #3a3a3a;
+            --code-color: white;
+            --code-background-color: #4a4a4a;
+
+            --shadow-color: #202020;
+            --header-font-family: "Fira Sans", sans-serif;
+            --text-font-family: "Fira Sans", sans-serif;
+        }
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="https://www.communautesdepartage.fr/bulma.min.css">
+    <link rel="stylesheet" href="https://www.communautesdepartage.fr/copa.css">
+    
+    
 </head>
+
 <body>
-<header>
-    <div>
-        <div>
-            <h1>La Communauté de Partage</h1>
-        </div>
-        <nav class="p-1">
-            <ul>
-                <li>
-                    <a href="/" class="current">Accueil</a>
-                </li>
-                <li>
-                  <a href="https://www.communautesdepartage.fr/pages/agenda/"
-                        class="">Agenda</a>
-                </li>
 
-                <li>
-                  <a href="https://www.communautesdepartage.fr/pages/contact/"
-                        class="">Contact</a>
-                </li>
+    <header>
+    
 
-            </ul>
-        </nav>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/" style="color: white">CoPa
+            <img src="https://www.communautesdepartage.fr/logo.svg" width="112" height="28">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
     </div>
-</header>
-<main style="display:flex; justify-content: center; flex-grow:1" >
-    <section class="section" style="max-width: 42rem;">
-        <div class="container">
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
             
+            
+                <a class="navbar-item subtitle-text" href="https://www.communautesdepartage.fr/pages/valeurs/">Qui sommes nous?</a>
+            
+                <a class="navbar-item subtitle-text" href="https://www.communautesdepartage.fr/pages/contact/">Contacter la COPA</a>
+            
+                <a class="navbar-item subtitle-text" href="https://www.communautesdepartage.fr/pages/legals/">Mentions Légales</a>
+            
+                <a class="navbar-item subtitle-text" href="https://www.communautesdepartage.fr/pages/agenda/">L&#x27;agenda de la COPA</a>
+            
+        </div>
+
+    </div>
+</nav>
 
 
-<h2 class="title">
-    Qui sommes nous ?
-</h2>
-<p>
-    Nous sommes une association 1901 implantée à Thorigné Fouillard. Nous proposons des services aux particuliers pour
-    réduire leur empreinte écologique. Nous nous attaquons à nos habitudes de consommation pour tendre vers la
-    décroissance.
-</p>
+    </header>
+    <br/>
+    <br/>
+    <div class="hero">
+        
+        
+        
+        
+        <div class="container is-fluid">
+                <!-- 
+                    +-----+
+                    |1 2 3|
+                    +-----+
+                    |  4  |
+                    +-----+
+                -->
 
-<h2>Nos Ambitions</h2>
-<ul>
-    <li>Enrayer notre société de consommation et en particulier le réflexe : J'ai besoin, j’achète.</li>
-    <li>Proposer de faire un pas, facilement acceptable par le plus grand nombre, vers une consommation plus
-        durable (à l'image des mouvements de la décroissance, de la simplicité volontaire, ou encore de la
-        sobriété)
-    </li>
-    <li>Mettre en œuvre une approche "virale" ou "venant du bas" plus propice à une révolution des usages</li>
-    <li>Stimuler le partage, la cohésion et la solidarité à une époque où les conditions climatiques nous
-        imposeront ces "compétences"
-    </li>
-</ul>
+            <div class="tile is-ancestor">
 
-<h2>Nos Projets</h2>
-
-<h3>Une Objethèque : La mutualisation des équipements</h3>
-
-<p>Dans nos foyers, on retrouve bon nombre d'équipements que nous achetons mais que nous n'utilisons finalement que très
-    peu.</p>
-<p>C'est tout à fait le genre d'achats qui pourraient facilement être évité, si une solution alternative existait.</p>
-<p>A l'image d'une bibliothèque, L'objethèque proposent d'organiser le stockage et la mise à
-    disposition d'équipements partagés.</p>
-<p>
-    Voici quelques exemples d'équipements : tondeuse, porte vélo, remorque, grand véhicule, appareils de cuisine
-    (raclette, fondu...), sono, broyeur végétaux, diable, barnum...
-</p>
-
-<h3>Ateliers / Cafés-Réparations</h3>
-<p>Nous organisons régulièrement des rencontres où nos bénévoles et partenaires partagent leurs connaissances, leurs
-    compétences en bricolage, couture, astuce d'entretien...</p>
+            <div class="tile is-vertical is-7">
+                
+                <div class="tile">
+                <!-- 1 -->
+                <div class="tile is-parent is-vertical ">
+                    
+<a style="text-decoration: none; color: white" href="https:&#x2F;&#x2F;www.communautesdepartage.fr&#x2F;projets&#x2F;repair-cafes&#x2F;">
+<article class="tile is-child notification copa-tile">
+    <div class="content" style="text-align: justify; padding: 0">
+    <p class="title">Repair Café</p>
+    <p>Nous organisons régulièrement des rencontres où nos bénévoles et partenaires partagent leurs connaissances, leurs compétences en bricolage, couture, astuce d'entretien...</p>
 <p>Chacun peut amener son équipement défectueux en vu d'être aidé, guidé pour la réparation.</p>
 
-<h3>Le partage de voitures</h3>
-<p>Le transport est un sujet particulièrement impactant, dans ce domaine, nous proposons la mise en place d'une solution
-    qui permette d'éviter d'acheter/entretenir un (second?) véhicule, et dépanner en cas de problème.</p>
-<img src="/IMG_3267_mini.jpeg" alt="photo d'une twingo noire garée dans la rue" style=""/>
-<p>
-    A ce jour, nous partageons un véhicule par l'intermédiaire d'une plateforme de partage de véhicules entre
-    particuliers.
-    La prise du véhicule se fait sur rendez-vous.</p>
-
-
-<h3>Le tiers-lieu</h3>
-
-<p>C'est sans doute le projet le plus ambitieux et le moins circonscrit à ce jour.</p>
-<p>Avec l'objethèque et l'auto-partage nous assurons notre premier objectif : la décroissance, reste à traiter le sujet
-    du lien social. Pour cela, nous étudions la création d'un tiers lieu.</p>
-
-<p>Un lieu de convivialité permettant de partager du temps ou des connaissances au travers d'ateliers, d'expérimenter,
-    de pratiquer, de s'informer... Un lieu polyvalent ouvert au plus grand nombre, permettant d’accueillir les
-    évènements d'associations ou de particuliers.</p>
-
-<p>Concrètement on imagine :</p>
-<ul>
-    <li>un lieu de convivialité, où une asso peut faire une réunion/repas/AG/After-entraînement, installé dans des
-        canapés
-    </li>
-    <li>un lieu où l'on apprend à construire un semoir en bois, son potager vertical</li>
-    <li>un lieu où l'on peut expérimenter des solutions low tech</li>
-    <li>un lieu où l'on peut trouver des gens avec des compétences et l'envie de les partager, auprès de qui on peut
-        confronter ses idées de projets, son imagination...
-    </li>
-    <li>un lieu où quelqu'un peut présenter des tuto coiffures / cuisine / informatique...</li>
-    <li>un lieu où on arrive avec un aspirateur cassé et on repart avec un aspirateur fonctionnel</li>
-</ul>
-<p>A ce sujet, nous continuons à apprendre sur les différentes organisations possibles, nous visitons d'autres tiers
-    lieux inspirant, nous sommes à l'écoute des éventuels participants, des présentateurs/acteurs volontaires...</p>
-
-
-<h2>Nos Valeurs</h2>
-
-<h3>L'écologie pragmatique</h3>
-<ul>
-    <li> Il n'y a pas de course au plus écologique. Il n'existe pas d'écolo parfait. Chacun doit pouvoir
-        définir son propre niveau d'écologie sur les différents domaines de sa vie, par exemple, être libre
-        d'utiliser une solution thermique sans être montré du doigt.
-    </li>
-    <li> Même si l'équipement n'est pas une solution parfaite du point de vu écologique, elle peut avoir sa
-        place et ses usages. Ex: Il vaut mieux réutiliser du matériel d'occasion que de le jeter pour une
-        version bio-sourcée.
-    </li>
-    <li> Il vaut mieux partager une ressource, même "polluante", à plusieurs, que de laisser chacun acheter
-        la sienne dans son coin.
-    </li>
-    <li> Proposer des alternatives plus écologiques quand c'est possible, sensibiliser aux changements
-        d'usages (ex: tondeuse manuelle, ou ne plus tondre (ex gazon sauvage / japonais) )
-    </li>
-    <li> Les achats doivent faire l'objet d'une étude sur la réparabilité et l'empreinte écologique
-        (construction + usage + entretien + recyclage)
-    </li>
-    <li> Réparer c'est mieux que remplacer</li>
-</ul>
-
-
-<h3>La Solidatité et la Cohésion</h3>
-<p>
-    La caractère associatif des communautés de partage est important : Ce n'est pas un service municipal. Les adhérents
-    se regroupent autour d'un projet commun qui leur impose de collaborer, résoudre des conflits, définir un mode de
-    gouvernance, prendre des décisions à plusieurs... C'est la base du vivre ensemble et pourtant dans la vie du
-    citoyen, nous avons peu d'opportunité de rentrer en relation avec les gens qui nous entourent.
-</p>
-
-
-        </div>
-    </section>
-</main>
-<footer id="footer" class="inner">
-    <div>
-        &copy; 2023 La Communauté de Partage - <a href="https://www.communautesdepartage.fr/pages/legals/">Mentions Légales</a>
     </div>
-</footer>
+
+</article>
+</a>
+
+
+                </div>
+
+                <!-- 2 -->
+                <div class="tile is-parent is-vertical">
+                    
+<a style="text-decoration: none; color: white" href="https:&#x2F;&#x2F;www.communautesdepartage.fr&#x2F;projets&#x2F;objetheque&#x2F;">
+<article class="tile is-child notification copa-tile">
+    <div class="content" style="text-align: justify; padding: 0">
+    <p class="title">Objethèque</p>
+    <p><em>La mutualisation de nos objets</em></p>
+<p>Dans nos foyers, on retrouve bon nombre d'équipements que nous achetons mais que nous n'utilisons finalement que très peu.</p>
+<p>C'est tout à fait le genre d'achats qui pourraient facilement être évité, si une solution alternative existait.</p>
+
+    </div>
+
+</article>
+</a>
+
+
+                </div>
+
+                <!-- 3 -->
+                <div class="tile is-parent is-vertical"">
+                    
+<a style="text-decoration: none; color: white" href="https:&#x2F;&#x2F;www.communautesdepartage.fr&#x2F;projets&#x2F;voiture&#x2F;">
+<article class="tile is-child notification copa-tile">
+    <div class="content" style="text-align: justify; padding: 0">
+    <p class="title">Auto partage</p>
+    <p>Le transport est un sujet particulièrement impactant, dans ce domaine, nous
+proposons la mise en place d'une solution qui permette d'éviter
+d'acheter/entretenir un (second?) véhicule, et dépanner en cas de problème.</p>
+
+    </div>
+
+</article>
+</a>
+
+
+                </div>
+
+
+                </div>
+
+                <!-- 4 -->
+                <div class="tile is-parent">
+                    
+<a style="text-decoration: none; color: white" href="https:&#x2F;&#x2F;www.communautesdepartage.fr&#x2F;projets&#x2F;tiers-lieu&#x2F;">
+<article class="tile is-child notification copa-tile">
+    <div class="content" style="text-align: justify; padding: 0">
+    <p class="title">Tiers lieu</p>
+    <p>Un lieu de convivialité permettant de partager du temps ou des connaissances au
+travers d'ateliers, d'expérimenter, de pratiquer, de s'informer... Un lieu
+polyvalent ouvert au plus grand nombre, permettant d’accueillir les évènements
+d'associations ou de particuliers.&lt;</p>
+
+    </div>
+
+</article>
+</a>
+
+
+                </div>
+                
+            </div>
+            <!-- right part -->
+            <div class="tile is-parent">
+                <article class="tile is-child notification" style="background: rgba(0,0,0,0)">
+                <div class="content">
+                    <p class="title">Découvrir</p>
+                    <p class="subtitle">la CoPa</p>
+                    <div class="content">
+                    <img class="text-center" style="width: 100%; " src="https://www.communautesdepartage.fr/logo.svg">
+                    <!-- Content -->
+                    </div>
+                </div>
+                </article>
+            </div>
+            </div>
+
+        
+        <footer>
+            <small class="subtext">
+                &copy; 2023 La Communauté de Partage - <a href="https://www.communautesdepartage.fr/pages/legals/">Mentions
+                    Légales</a>
+            </small>
+        </footer>
+        
+    </div>
+    </div>
 </body>
+
 </html>

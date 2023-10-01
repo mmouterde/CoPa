@@ -1,0 +1,21 @@
+@import "_ultility.scss";
+@import "_text.scss";
+@import "_markdown.scss";
+html {
+  background-color: var(--secondary-color);
+}
+
+body {
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+.navbar {
+  background-color: var(--secondary-color);
+}
+
+.copa-tile {
+    background: var(--primary-tile-color);
+}
+
+
